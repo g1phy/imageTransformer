@@ -23,7 +23,7 @@ void __fastcall TForm1::FormCreate(TObject *Sender)
 void __fastcall TForm1::Button1Click(TObject *Sender)
 {
 	if(OpenPictureDialog1->Execute()) {
-		Label1->Caption = "Успешно загружено";
+		Label1->Caption = "Uploaded successfully";
 		Image1->Picture->LoadFromFile(OpenPictureDialog1->FileName);
 		Image2->Picture->LoadFromFile(OpenPictureDialog1->FileName);
 		Settings->Visible = true;
